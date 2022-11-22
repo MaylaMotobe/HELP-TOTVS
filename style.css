@@ -1,4 +1,4 @@
-/* ====== REreET  ================================ */
+@charset "UTF-8";
 *{
     padding: 0px;
     margin: 0px;
@@ -25,9 +25,24 @@ img{
     color: rgb(153, 86, 10);
 }
 
-#doe, span{
-    color:var(--base-color);
+.divider-1 {
+    height: 1px;
+    background: linear-gradient(
+      270deg,
+      hsla(var(--hue), 36%, 57%, 1),
+      hsla(var(--hue), 65%, 88%, 0.34)
+    );
 }
+  
+.divider-2 {
+    height: 1px;
+    background: linear-gradient(
+      270deg,
+      hsla(var(--hue), 65%, 88%, 0.34),
+      hsla(var(--hue), 36%, 57%, 1)
+    );
+}
+
 /* PALETA DE CORES */
 :root{
     --header-height: 6.9rem;
@@ -46,7 +61,7 @@ img{
 }
 
 /* CORPO DA PÁGINA */
-/*===COR NO SCROLL ====*/
+/* SCROLL - COR */
 ::-webkit-scrollbar{
      background:var(--base-color); 
      width: .7rem; 
@@ -64,7 +79,6 @@ html{
 body{
     font: 400 1.6rem 'DM Sans', sans-serif;
     color: rgb(31, 29, 29);
-    /* background-image: url('IMG/fundo1.jpg'); */
     background: rgba(241, 222, 201, 0.315);
     -webkit-font-smoothing: antialiased;
 }
@@ -110,7 +124,7 @@ body{
     );
 }
 
-/* LAYOUT*/
+/* LAYOUT */
 .container{
     margin-left: 1rem; /* 24px */
     margin-right: 1rem; 
@@ -166,7 +180,7 @@ body{
     
 }
 
-/* NAV */
+/* NAVEGADOR */
 
 
 nav{
@@ -209,7 +223,7 @@ nav ul li{
 nav .menu ul{
     display: none;
 }
-/* Mostrar o menu no responsivo */
+/* Menu no responsivo */
 nav .menu {
     opacity: 0;
     visibility: hidden;
@@ -265,10 +279,11 @@ nav.show span.icon-close-877{
     opacity: 1;
     top: 2rem;
 }
+
 /* HOME */
 #home{
     overflow: hidden;
-    background-image: url(../Img/home.svg);   
+    /* background-image: url(IMG/fundo1.jpg);    */
     background-repeat: no-repeat;
     margin: 0 auto;  
     background-size: cover;
@@ -319,17 +334,17 @@ nav.show span.icon-close-877{
     margin-bottom: 2rem;
 }
 
-/* ABOUT */
+/* HISTORIA */
 
-#about .container{
+#historia .container{
     margin: 0;  
 }
 
-#about .image{
+#historia .image{
     position: relative;
 }
 
-#about .image::before{
+#historia .image::before{
     content: '';
     height: 100%;
     width: 100%;
@@ -341,30 +356,30 @@ nav.show span.icon-close-877{
     z-index: 1; /* ´Fica atrás da imagem */
 }
 
-#about .image img,
-#about .image::before{
+#historia .image img,
+#historia .image::before{
     border-radius: 0.25rem;
 }
 
-#about .image img{
+#historia .image img{
     position: relative;
    
 }
 
-#about .text{
+#historia .text{
     margin-left:1rem;
     margin-right: 1rem;
     text-align:end;
 }
 
-#about .text p{
+#historia .text p{
     margin-bottom: 2rem;
     line-height: 1.5;
 }
 
 
 
-/* Serviços */
+/* CARDAPIO */
 
 .cards.grid{
     gap: 2rem;  
@@ -397,50 +412,50 @@ nav.show span.icon-close-877{
 }
 
 
-/*Contato */
-#contact{
+/* CONTATO */
+#contato{
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#contact .container {
+#contato .container {
   grid-auto-flow: column;
   align-items: center;
 }
 
-#contact .grid {
+#contato .grid {
     gap: 4rem;
   }
   
-  #contact .text {
+  #contato .text {
     max-width: 25rem;
   }
 
-  #contact .text p {
+  #contato .text p {
     margin-bottom: 2rem;
   }
   
-  #contact .button i,
-  #contact ul li i {
+  #contato .button i,
+  #contato ul li i {
     font-size: 1.5rem;
     margin-right: 0.625rem;
   }
   
-  #contact ul.grid {
+  #contato ul.grid {
     gap: 2rem;
   }
   
-  #contact ul li {
+  #contato ul li {
     display: flex;
     align-items: center;
   }
   
-  #contact ul li i {
+  #contato ul li i {
     color: var(--base-color);
   }
   
-  /*back to top */
+  /*VOLTAR PARA CIMA */
 .icon-reshot-icon-oceans-E7Q6JK5Z241{
     font-size: 2rem;
 }
@@ -493,13 +508,13 @@ nav.show span.icon-close-877{
         padding: 10rem 0 ;
     }
 
-      .section header,
+      /* .section header,
       #testimonials header {
         max-width: 32rem;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-      }
+      } */
     
       .button {
         height: 3.125rem;
@@ -552,12 +567,12 @@ nav.show span.icon-close-877{
     }
 
      /* about */
-  #about .container {
+  #historia .container {
     margin: 0 auto;
     grid-auto-flow: column;
   }
  
-  /* services */
+  /* cardapio */
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -568,22 +583,13 @@ nav.show span.icon-close-877{
     margin-bottom: 2rem;
   }
 
-  /* testimonials */
-  #testimonials .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .testimonial{
-    flex-grow: 1;
-    word-wrap: break-word;
-}
-/* contact */
-  #contact .container {
+/* contato */
+  #contato .container {
     grid-auto-flow: column;
     align-items: center;
   }
 
-  #contact .text {
+  #contato .text {
     max-width: 25rem;
   }
 
@@ -597,12 +603,12 @@ nav.show span.icon-close-877{
         --title-font-size: 2.25rem;
         --subtitle-font-size: 1.125rem;
     }
-    #about .image img{
+    #historia .image img{
         width: 80%;
         left: 12%;
     }
 
-    #about .image::before{
+    #historia .image::before{
         height: 80%;
         top: -7%;
         left: -4%;
@@ -613,45 +619,33 @@ nav.show span.icon-close-877{
 
 
 @media(max-width: 1169px){ /*ok*/
-    #about .container{
+    #historia .container{
         margin: 0 auto;
     }
-    #about .image img{
+    #historia .image img{
         width: 45%;
         margin-left: 9rem;
     }
     
-    #about .image::before{
+    #historia .image::before{
         height: 100%;
         top: -.99%;
         left: 21%;
     }
 
-    #services .container{
+    #cardapio .container{
         margin: 0 auto;
     }
 
-    #testimonials .container{
+    #acasa .container{
         margin: 0 auto;
     }
 
-    #testimonials .title{
+    #acasa .title{
         text-align: center;
     }
 
-    #parceiros .container{
-        margin: 0 auto;
-    }
-
-    #parceiros ul li a {
-        width: 7rem;
-    }
-    #parceiros ul li a img{
-        height: 4rem;
-    }
-
-
-    #contact .container{
+    #contato .container{
         margin:  0 auto;
     }
 
@@ -662,15 +656,15 @@ nav.show span.icon-close-877{
     #home .container{
         margin: 0 auto;
     }
-    #about .container{
+    #historia .container{
         margin: 0 auto;
     }
 
-    #about .text{
+    #historia .text{
         margin: 2rem 0;
     }
 
-    #about .image::before{
+    #historia .image::before{
         height: 100%;
         width: 80%;
         left: 22%;
@@ -678,14 +672,14 @@ nav.show span.icon-close-877{
         z-index: 0;
     }
 
-    #about .image img{
+    #historia .image img{
        width: 55%;
        margin-bottom: 4rem;
        right: -5%;
        top: 10%;
     }
 
-    #services .container{
+    #cardapio .container{
         margin: 0 auto;
     }
 
@@ -693,24 +687,21 @@ nav.show span.icon-close-877{
         grid-template-rows: 1fr 1fr 1fr;
     }
 
-    #testimonials .container{
+    #acasa .container{
         margin: 0 auto;
     }
-    .testimonial{
+    .acasa{
         flex-grow: 1;
         word-wrap: break-word;
     }
 
-    #parceiros .container{
-        margin: 0 auto;
-    }
 
-    #contact{
+    #contato{
         padding: 5rem 2rem;
         background-size: cover; /*especifica que a imagem de fundo deve ser dimensionado de modo que seja tão pequena quanto possível*/
     }
 
-    #contact .container{
+    #contato .container{
         margin:  0 auto;
     }
 }

@@ -4,10 +4,13 @@
         <!-- Informações da Página -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="stylesheet" href="IMG/logo1.png" />
+        <link rel="shortcut icon" href="/IMG/logo1.png" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--style-->
-        <link rel="stylesheet" href="CSS/cardapio.css" />
+       <!-- Estilos -->
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="CSS/cardapio.css" />
+       <!-- Swiper -->
+       <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
         <title>Grano di Café</title>
     </head>
     <body>
@@ -24,29 +27,25 @@
                         <li><a class="title" href="contato.html">Contato</a></li>
                     </ul>
                 </div>
+                <span class="toggle icon-close-877"></span>
+                <span class="toggle icon-open-menu-6208"></span>
             </nav>
         </header>
         <!--fim do Navegador-->
+
 <!-- HOME DO CARDÁPIO -->
-        <main class="mainTurtle">
-            <section class="section" id="turtle">
+        <main class="mainCardapio">
+            <section class="section" id="cardapio">
                 <div class="container grid">
                     <div class="text">
                         <h2 class="title">Conheça nossos <span class="span-home">pratos</span> </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut aut sapiente ipsam, animi vero ipsa velit saepe commodi illum id.</p>
+                        <p>Temos pratos específicos pelo dia da semana!</p>
                     </div>
                 </div>    
             </section>
 
             <div class="divider-1"></div>
 
-            <section class="section" id="especie">
-                <div class="container grid">
-                    <div class="text">
-                        <h2 class="title">Você sabia que temos <span>pratos específicos</span> pelo dia da semana?</h2>
-                        <p>Conheça as nossas opções: </p>
-                    </div>
-            </section>
             <!--FIM HOME-->
             <div class="divider-2"></div> <!--Linha Divisória */--> 
 
@@ -56,26 +55,31 @@
                 <div class="container grid">
                     <div class="text">
                         <h1 class="title">Segunda-<span>Feira</span></h1>        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, eius.</p>  
-                        <!-- <img src="" alt="">  COLOCAR IMAGEM DO PDF DO CARDÁPIO-->
+                        <p>Nossa deliciosa almôndegas acompanha uma porção de arroz, feijão, purê, legumes refogado e uma salada pequena.</p>  
+                        <div class="text">
+                            <a class="button" href="https://msjjordao.wixsite.com/granocafemenu/segunda-feira" target="_blank">Confira </a>
+                        </div>
                     </div>
                     <div class="image">
-                        <img src="#" alt="Foto de um prato de segunda-feira">
+                        <img src="/IMG/almondegas.png" alt="almondegas">
                     </div>   
                 </div>    
             </section>
 
             <div class="divider-2"></div> <!--Linha Divisória*/--> 
 <!-- TERÇA-FEIRA -->
-            <section class="section direita">
+            <section class="section esquerda">
                 <div class="container grid">
                     <div class="text">
                         <h1 class="title">Terça-<span>Feira</span></h1>        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, eius.</p>  
-                        <!-- <img src="" alt="">  COLOCAR IMAGEM DO PDF DO CARDÁPIO-->
+                        <p>A massa lisa que é surpreendente em todos os sentidos, acompanha o molho de sua preferência .</p>
+                        <p>Consulte a disponibilidade*</p>
+                        <div class="text">
+                            <a class="button" href="https://msjjordao.wixsite.com/granocafemenu/ter%C3%A7a-feira" target="_blank">Confira </a>
+                        </div>
                     </div>
                     <div class="image">
-                        <img src="#" alt="Foto de um prato de terça-feira">
+                        <img src="/IMG/macarrao.jpg" alt="macarrao">
                     </div>   
                 </div>    
             </section>
@@ -87,11 +91,14 @@
                 <div class="container grid">
                     <div class="text">
                         <h1 class="title">Quarta-<span>Feira</span></h1>        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, eius.</p>  
-                        <!-- <img src="" alt="">  COLOCAR IMAGEM DO PDF DO CARDÁPIO-->
+                        <p>Nada melhor como uma feijoada! A nossa acompanha arroz, couve, farofa e vinagrete.</p>  
+                        <p>Temos a opção de dois tamanhos: Pequena e Grande! </p>
+                        <div class="text">
+                            <a class="button" href="https://msjjordao.wixsite.com/granocafemenu/quarta-feira" target="_blank">Confira </a>
+                        </div>
                     </div>
                     <div class="image">
-                        <img src="#" alt="Foto de um prato de quarta-feira">
+                        <img src="/IMG/feijoada.jpg" alt="feijoada">
                     </div>   
                 </div>    
             </section>
@@ -99,15 +106,18 @@
             <div class="divider-2"></div> <!--Linha Divisória*/--> 
 
             <!-- QUINTA-FEIRA -->
-            <section class="section direita">
+            <section class="section esquerda">
                 <div class="container grid">
                     <div class="text">
                         <h1 class="title">Quinta-<span>Feira</span></h1>        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, eius.</p>  
-                        <!-- <img src="" alt="">  COLOCAR IMAGEM DO PDF DO CARDÁPIO-->
-                    </div>
+                        <p>Quinta pede um belo hamburguer. O Grano Burguer acompanha alface, tomate, maionese, queijo, uma cesta de batata frita e um refrigerante lata.</p> 
+                        <p>Temos hamburguer bovino, frango ou linguiça</p>
+                        <div class="text">
+                            <a class="button" href="https://msjjordao.wixsite.com/granocafemenu/quinta-feira" target="_blank">Confira </a>
+                        </div> 
+                        </div>
                     <div class="image">
-                        <img src="#" alt="Foto de um prato de quinta-feira">
+                        <img src="/IMG/hamburguer.jpg" alt="hambuguer">
                     </div>   
                 </div>    
             </section>
@@ -119,16 +129,20 @@
                 <div class="container grid">
                     <div class="text">
                         <h1 class="title">Sexta-<span>Feira</span></h1>        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, eius.</p>  
-                        <!-- <img src="" alt="">  COLOCAR IMAGEM DO PDF DO CARDÁPIO-->
+                        <p>O Salmão é nosso carro chefe! Acompanhado de uma porção de arroz, purê, legumes refogados e uma salada pequena.</p>  
+                        <div class="text">
+                            <a class="button" href="https://msjjordao.wixsite.com/granocafemenu/sexta-feira" target="_blank">Confira </a>
+                        </div> 
                     </div>
                     <div class="image">
-                        <img src="#" alt="Foto de um prato de sexta-feira">
+                        <img src="/IMG/salmao.png" alt="salmao">
                     </div>   
                 </div>    
             </section>
 
             <div class="divider-2"></div> <!--Linha Divisória*/--> 
+
+            <!-- COLOCAR O LINK PARA O CARDAPIO COMPLETO -->
 
             <!--FOOTER-->
 <footer class="footer" >
@@ -151,7 +165,7 @@
                 <a href="mailto:granodicafe@gmail.com"><i class="icon-mail-line"></i></a>
             </div>
         </div>
-        <p class="copyright">© 2010 Squirtle.  Todos os direitos reservados. </p>
+        <p class="copyright">© 2022 Grano di Café. Todos os direitos reservados. </p>
     </div>
  </footer>
 
