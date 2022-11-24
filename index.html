@@ -6,13 +6,37 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="shortcut icon" href="/IMG/logo1.png" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!--menu-->
+        <link rel="stylesheet" href="./Assets/fonts/style.css">   
+        <link rel="stylesheet" href="./Assetss/fonts/style.css">
+        <link rel="stylesheet" href="https://i.icomoon.io/public/temp/9548c1dc8d/UntitledProject/style.css">
+        <!-- Swiper -->
+        <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <!--style-->
         <link rel="stylesheet" href="style.css" />
-        <!-- Swiper -->
-        <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="/CSS/footer.css">
+        <!-- fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
         <title>Grano di Café</title>
     </head>
     <body>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div  class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.Vlivras.Widget('https://vlibras.gov.br/app');
+            </script>
+
         <!--Navegador-->
         <header id="header" class="scroll">
             <nav class="container">
@@ -35,7 +59,7 @@
         <!--Home/Index-->
         <main>
             <section class="section" id="home">
-                <div class="container">
+                <div class="container grid">
                     <div class="text">
                         <h2 class="title">
                             Bem-vindo ao
@@ -43,10 +67,9 @@
                         </h2>
 
                         <p>
-                            O Grano di Café é um restaurante feito para você e
+                            Somos um restaurante feito para você e
                             sua família.
                         </p>
-
                     </div>
                 </div>
             </section>
@@ -60,6 +83,7 @@
                     <div class="image">
                         <img src="IMG/equipe.png" alt="Equipe" />
                     </div>
+                
                     <div class="text">
                         <h2 class="title">Quem <span>Somos</span></h2>
                         <p>
@@ -80,26 +104,48 @@
             <!-- CARDÁPIO -->
             <section class="section" id="cardapio">
                 <div class="container grid">
-                    <div class="image"><img src="#" alt="fotoscardapio" /></div>
-                    <div class="text">
-                        <a class="button" href="cardapio.html">Cardápio </a>
+                    <header>
+                        <h2 class="title">Cardápio</h2>
+                        <p>Conheça nossas deliciosas opções de pratos e doces!</p>
+                        <div class="text">
+                            <a class="button" href="cardapio.html">Cardápio </a>
+                        </div>
+                    </header>
+                    <div class="cards grid">
+                        <div class="card">
+                            <img src="/IMG/tortachoco.png" alt="">
+                                
+                        </div>
+                        <div class="card">
+                            <img src="/IMG/tortamorango.png" alt="">
+                                
+                        </div>
+                        <div class="card">
+                            <img src="/IMG/pudim.png" alt="">
+                              
+                        </div>
                     </div>
                 </div>
+                </div>
+
             </section>
             <div class="divider-2"></div>
             <!--Linha Divisória */-->
 
             <!-- A CASA -->
             <section class="section" id="acasa">
-                <div class="container grid">
-                    <div class="text">
+                <div class="container">
+                    <header>
                         <h2 class="title">Conheça nossa <span>Casa</span></h2>
                         <p>Será um prazer te receber!</p>
+                    </header>
+                    
                         <!-- colocar o mapa e o horario de funcionamento* -->
                         <a href="acasa.html" class="button" target="_blank"
-                            >Saiba mais</a
-                        >
+                            >Saiba mais</a>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.929483702161!2d-46.53266768440857!3d-23.46300796385404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5446cfeeebd%3A0xfa9c0c1ae8acdbd6!2sGrano%20di%20Caf%C3%A9!5e0!3m2!1sen!2sbr!4v1669315074583!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+                    
                 </div>
             </section>
             <!-- FIM CASA -->
@@ -158,31 +204,19 @@
 
         <a href="#home" class="back-to-top"><i class="icon-crculo"></i></a>
 
-        <!--Script-->
-        <!--BOOTSTRAP-->
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"
-        ></script>
+      <!--Script-->
+            <!--BOOTSTRAP-->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-        <!--SWIPE-->
-        <script src="#"></script>
+            <!--SWIPE-->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-        <!--SCROLL-->
-        <script src="#"></script>
+            <!--SCROLL-->
+            <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--JavaScrip-->
-        <script src="#"></script>
+            <!--JavaScrip-->
+            <script src="/JS/javascript.js"></script>
     </body>
 </html>

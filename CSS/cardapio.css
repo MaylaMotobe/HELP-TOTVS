@@ -1,8 +1,8 @@
-/* ====== Cardapio ================================ */
+/* ====== turtle ================================ */
 #cardapio{
     text-align: center;
     overflow: hidden;
-    background-image: url(/IMG/fundocardapio.jpg);
+    background-image: url(/IMG/tortamorango.png);
     background-size: cover;
 }
 
@@ -15,7 +15,7 @@
 }
 
 
-/*direita*/
+/**/
 
 .direita .container{
     margin: 0 ;
@@ -50,12 +50,12 @@
     text-align:end;
 }
 
- .mainCardapio .text .title{
+ .mainTurtle .text .title{
     text-align: center;   
     margin: 2rem 0;
 }
 
-.mainCardapio  .container .text p{
+.mainTurtle  .container .text p{
     font-size: 1.2rem;
     margin-bottom: 2rem;
     text-align: center;

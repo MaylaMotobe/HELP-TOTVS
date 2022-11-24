@@ -25,31 +25,29 @@ img{
     color: rgb(153, 86, 10);
 }
 
-.divider-1 {
-    height: 1px;
-    background: linear-gradient(
-      270deg,
-      hsla(var(--hue), 36%, 57%, 1),
-      hsla(var(--hue), 65%, 88%, 0.34)
-    );
+#contato, span{
+    color: rgb(153, 86, 10);
 }
-  
-.divider-2 {
-    height: 1px;
-    background: linear-gradient(
-      270deg,
-      hsla(var(--hue), 65%, 88%, 0.34),
-      hsla(var(--hue), 36%, 57%, 1)
-    );
-}
+
 
 /* PALETA DE CORES */
 :root{
     --header-height: 6.9rem;
 
+     /* colors */
+     --hue: 30;
+     /* HSL color mode */
+     --base-color: hsl(var(--hue) 36% 57%);
+     --base-color-second: #61240cbb;
+     --base-color-alt: #a47464;
+     --title-color: #61240c;
+     --text-color: hsl(0 0% 46%);
+     --text-color-light: hsl(0 0% 98%);
+     --body-color: hsl(0 0% 98%);
+
 
     /* Paleta de Cores */
-    /* #a96e35
+   /* color: #a96e35
     #d7bc99
     #61240c
     #a47464
@@ -63,12 +61,12 @@ img{
 /* CORPO DA PÁGINA */
 /* SCROLL - COR */
 ::-webkit-scrollbar{
-     background:var(--base-color); 
+     background:rgba(241, 222, 201, 0.315); 
      width: .7rem; 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #d7bc99; 
+    background:#d7bc99; 
     border-radius: .7rem;
   }
 
@@ -102,7 +100,7 @@ body{
 }
 
 .button:hover{
-    background:rgb(9, 94, 75);
+    background:rgb(153, 86, 10);
     color: var(--body-color);
 }
 
@@ -181,8 +179,6 @@ body{
 }
 
 /* NAVEGADOR */
-
-
 nav{
     display: flex;
     justify-content:space-between; 
@@ -199,14 +195,14 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: var(--base-color);
+    color: #9e5f0c;;
 }
 
 nav ul li a::after{
     content: '';
     width: 0%; /*Para dar o efeito dele crescendo */
     height: 2px;
-    background: var(--base-color);
+    background: #b46e13;
     position: absolute;
     left: 0;
     bottom: -1rem;
@@ -256,7 +252,7 @@ nav.show ul.grid {
 
 /* Toggle Menu */
 .toggle{
-    color: var(--base-color);
+    color: #9e5f0c;;
     font-family: 1.5rem;
     font-weight: 700;
     cursor: pointer;
@@ -283,18 +279,20 @@ nav.show span.icon-close-877{
 /* HOME */
 #home{
     overflow: hidden;
-    /* background-image: url(IMG/fundo1.jpg);    */
+    background-image: url(IMG/restaurante2.jpg);  
     background-repeat: no-repeat;
     margin: 0 auto;  
-    background-size: cover;
+    background-size:cover;
 }
 
 #home .container{
-    margin: 0 ;   
+    margin: 0 ;
+     
 }
 
 #home .image{
-    position: relative;
+    position:relative;
+     
 }
 
 #home .image::before{
@@ -317,6 +315,7 @@ nav.show span.icon-close-877{
 #home .image img{
     position: relative;
     right: -5.93rem;
+    
 }
 
 #home .text{
@@ -341,11 +340,12 @@ nav.show span.icon-close-877{
 }
 
 #historia .image{
-    position: relative;
+    position:relative;
+    height: 85% ;
 }
 
 #historia .image::before{
-    content: '';
+    content:'';
     height: 100%;
     width: 100%;
     /* background: var(--base-color-second); */
@@ -356,9 +356,11 @@ nav.show span.icon-close-877{
     z-index: 1; /* ´Fica atrás da imagem */
 }
 
+
+
 #historia .image img,
 #historia .image::before{
-    border-radius: 0.25rem;
+    border-radius: 1rem;
 }
 
 #historia .image img{
@@ -370,6 +372,7 @@ nav.show span.icon-close-877{
     margin-left:1rem;
     margin-right: 1rem;
     text-align:end;
+    text-justify: auto;
 }
 
 #historia .text p{
@@ -461,7 +464,7 @@ nav.show span.icon-close-877{
 }
 
 .back-to-top{
-    background:rgba(25, 133, 133, 0.678);
+    background:#975c0e;;
     color: var(--text-color-light);
 
     position: fixed;
@@ -479,7 +482,7 @@ nav.show span.icon-close-877{
 }
 
 .back-to-top:hover{
-    color: rgb(9, 94, 75);
+    color: #9e5f0c;;
 }
 
 
@@ -508,13 +511,13 @@ nav.show span.icon-close-877{
         padding: 10rem 0 ;
     }
 
-      /* .section header,
+      .section header,
       #testimonials header {
         max-width: 32rem;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-      } */
+      }
     
       .button {
         height: 3.125rem;

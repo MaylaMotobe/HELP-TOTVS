@@ -1,6 +1,6 @@
 #acasa{
     overflow: hidden;
-    background: #d7bc99; 
+    background: rgba(241, 222, 201, 0.315); 
 }
 
 #acasa .text{
@@ -19,16 +19,6 @@
     margin-bottom: 2rem;
 }
 
-
-/*===== FOTOS AMBIENTE ====== */
-#caroseul{
-    margin: 0 auto;
-
-}
-#caroseul .foto{
-    margin: 0 auto;
-    width: 70%;
-}
 
 
 /* Menu Responsivo */
@@ -77,9 +67,5 @@
     #acasa .container{
         margin: 0 auto;
         width: 100%;
-    }
-
-    #caroseul .container{
-        margin: 0 auto;
     }
 }

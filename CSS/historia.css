@@ -14,6 +14,9 @@
 
 #sobre .image{
     position: relative;
+    height: 75%;
+    
+   
 }
 
 #sobre .image::before{
@@ -30,7 +33,7 @@
 
 #sobre .image img,
 #sobre .image::before{
-    border-radius: 0.25rem;
+    border-radius:1rem;
 }
 
 #sobre .image img{
