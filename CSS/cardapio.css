@@ -1,4 +1,4 @@
-/* ====== turtle ================================ */
+/*cardapio  */
 #cardapio{
     text-align: center;
     overflow: hidden;
@@ -15,7 +15,7 @@
 }
 
 
-/**/
+/*Direção das imagens dos pratos*/
 
 .direita .container{
     margin: 0 ;

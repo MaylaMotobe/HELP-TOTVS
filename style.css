@@ -25,7 +25,7 @@ img{
     color: rgb(153, 86, 10);
 }
 
-#contato, span{
+span{
     color: rgb(153, 86, 10);
 }
 
@@ -279,7 +279,7 @@ nav.show span.icon-close-877{
 /* HOME */
 #home{
     overflow: hidden;
-    background-image: url(IMG/restaurante2.jpg);  
+    background-image: url(IMG/fundocoffe2.jpg);  
     background-repeat: no-repeat;
     margin: 0 auto;  
     background-size:cover;
@@ -331,6 +331,11 @@ nav.show span.icon-close-877{
 
 #home .text p{
     margin-bottom: 2rem;
+
+}
+
+#home .title{
+    color:black;
 }
 
 /* HISTORIA */
@@ -414,6 +419,27 @@ nav.show span.icon-close-877{
     
 }
 
+/*A CASA */
+
+#mapa {
+   margin-right: 50%;
+} 
+
+
+/* swiper */
+.swiper-slide {
+    height: auto;
+    padding: 4rem 1rem;
+}
+  
+  .swiper-pagination-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+  
+  .swiper-pagination-bullet-active {
+    background: var(--base-color);
+}
 
 /* CONTATO */
 #contato{
@@ -499,7 +525,7 @@ nav.show span.icon-close-877{
 
 
 /* ======= RESPONSIVO - MEDIA QUERIES ================================= */
-/* EXTRA LARGE DEVICES: +1200 >  ok */ 
+/* EXTRA LARGE DEVICES: +1200 > */ 
 @media (min-width: 1200px){
     .container{
         max-width: 1120px;
@@ -569,7 +595,7 @@ nav.show span.icon-close-877{
         margin-top: var(--header-height);
     }
 
-     /* about */
+     /* historia */
   #historia .container {
     margin: 0 auto;
     grid-auto-flow: column;
@@ -600,7 +626,7 @@ nav.show span.icon-close-877{
 
 
   
-/* Large devices: +992 > ok */
+/* Large devices: +992 >  */
 @media (min-width: 992px){
     :root{
         --title-font-size: 2.25rem;
@@ -621,7 +647,7 @@ nav.show span.icon-close-877{
 
 
 
-@media(max-width: 1169px){ /*ok*/
+@media(max-width: 1169px){ 
     #historia .container{
         margin: 0 auto;
     }
@@ -655,7 +681,7 @@ nav.show span.icon-close-877{
     
 }
 
-@media(max-width: 1110px){ /*OK*/
+@media(max-width: 1110px){ 
     #home .container{
         margin: 0 auto;
     }

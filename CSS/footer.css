@@ -1,7 +1,6 @@
 /* footer*/
 .footer{
     background: rgba(241, 222, 201, 0.315);
-    /* background-image: url(/IMG/ambiente1.jpg); */
     margin: 0 auto;
     padding: 5rem 0;
     color: var(--text-color-light);
@@ -29,10 +28,10 @@
   
   .footer a{
     text-decoration: none;
-    color: var(--text-color-light);
+    color: black;
   }
   
-  .footer a:hover, .footer.social a:hover{
+  .footer a:hover, .footer.social a:hover, .footer img:hover{
     color:#9e5f0c;;
   }
   

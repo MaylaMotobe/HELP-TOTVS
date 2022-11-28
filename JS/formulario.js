@@ -12,7 +12,7 @@ function validarFormulario() {
         // const nome = document.getElementById("nome")
         // const email = document.getElementById("email")
         // const text = document.getElementById("validationTextara")
-        alert("Prontinho! Você receberá um e-mail com os próximos passos.")
+        alert("Obrigado! Você receberá um e-mail de retorno.")
         
         return;
     } else {

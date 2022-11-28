@@ -1,13 +1,44 @@
-#contato{
+#ocontato{
     overflow: hidden;
-    background-image: url(/IMG/fundocontato.jpg);
-    background-repeat: no-repeat;
-      
-}
-.p1{
-    color: white;
+    background: rgba(241, 222, 201, 0.315); 
 }
 
+#ocontato .text{
+    text-align: start;
+    background: rgba(247, 247, 247, 0.61);
+    padding: 2rem 3rem;
+    border-radius: .35rem .35rem;
+}
+
+#ocontato .text h1{
+    margin-bottom: 1rem;
+}
+
+
+#ocontato .text p{
+    margin-bottom: 2rem;
+}
+
+#trabalheconosco{
+    overflow: hidden;
+    background: rgba(241, 222, 201, 0.315); 
+}
+
+#trabalheconosco .text{
+    text-align: start;
+    background: rgba(247, 247, 247, 0.61);
+    padding: 2rem 3rem;
+    border-radius: .35rem .35rem;
+}
+
+#trabalheconosco .text h1{
+    margin-bottom: 1rem;
+}
+
+
+#trabalheconosco .text p{
+    margin-bottom: 2rem;
+}
 
 /* ======= RESPONSIVO - MEDIA QUERIES ================================= */
 @media (min-width: 1250px){ 

@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!--BOOTSTRAP-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+         <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <!--menu-->
         <link rel="stylesheet" href="./Assets/fonts/style.css">   
         <link rel="stylesheet" href="./Assetss/fonts/style.css">
@@ -43,83 +45,111 @@
             </nav>
         </header>
         <!--fim do Navegador-->
-<!-- HOME GRANDE -->
-        <main>
-            <section class="section" id="contato">
-                <div class="container grid">
-                    <div class="text">
-                        <h2 class="title">Entre em <span class="span-home">contato</span> conosco. </h2>
-                        <p class="p1">Um elogio, crítica ou sugestão</p>
-                    </div>
-                </div>    
-            </section>
-            <!--FIM HOME GRANDE-->
 
-            <div class="divider-2"></div> <!--Linha Divisória */--> 
+ <div class="divider-2"></div> <!--Linha Divisória */--> 
            
  
 <!-- FORMULÁRIO -->
-        <article>
-            <form action="#">
-                <fieldset>
-           
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" required="required"><br> 
-                 <label for="nome">Email:</label>
-                <input type="text" name="email" id="email" required="required"><br> 
-                 <label for="nome">Telefone:</label>
-                <input type="number" name="tel" id="tel" required="required"><br> 
-                 <label for="nome">Mensagem:</label>
-                <input type="message" rows="10" cols="50" name="msg" id="msg" required="required" placeholder="Deixe aqui suas sugestões, elogios e críticas:"><br> 
-                
-                 <input type="submit" value="Enviar"> 
-            </fieldset>
-            </form>
-        </article>
+<section class="section" id="inscricao">
+    <div class="container grid">
+        <div class="text">
+            <h2 class="title">Entre em <span class="span-home">Contato</span> </h2>
+            <p>Quer fazer um comentário, elogio, crítica ou sugestão? Então escreva para nós e em breve lhe daremos retorno.</p>
+            <!-- Botão para acionar modal(o formulário) -->
+            <button type="button" class="btn button" data-toggle="modal" data-target="#ExemploModalCentralizado">
+                Quero escrever! 
+            </button>
+
+        <!-- Modal -->
+            <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModalCentralizado">Inscrição</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+
+                    <form>
+                    <div class="row">
+                        <div class="col">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome Completo">
+                        </div>
+                        <div class="col">
+                            <label for="tel">Telefone</label>
+                            <input type="number" class="form-control" id="tel" placeholder="Seu telefone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Seu email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationTextarea">Estamos aqui para te ouvir: </label>
+                        <textarea class="form-control" id="validationTextarea" placeholder="Deixe sua mensagem para nós" required></textarea>
+                    </div>
+                        <button type="submit" class="btn button" id="botaoEnviar">Enviar</button>
+                    </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
         <!--FIM FORMULÁRIO -->
 
         <div class="divider-2"></div> <!--Linha Divisória */--> 
             
         <!-- TRABALHE CONOSCO -->
-        <section class="section sobre" id="sobre">
+        <section class="section" id="trabalheconosco">
             <div class="container grid">
                 <div class="text">
-                    <h2 class="title">Trabalhe <span>Conosco</span></h2>
+                    <h2 class="title">
+                        Trabalhe <span class="span-home">Conosco</span>
+                    </h2>
                     <p>
-                        Mande o seu currículo para nosso email e em breve lhe daremos retorno sobre as vagas disponíveis.
+                        Envie o seu currículo para nosso e-mail <span>gourmetgranocafe@gmail.com</span> e em breve lhe daremos retorno sobre as vagas disponíveis.
                     </p>
-                    <p>granodicafe@gmail.com</p>
-                    <!-- COLOCAR FORMULÁRIO PARA ENVIAR O CURRICULO -->
-</div>
-</div>
+                </div>
+                
+            </div>
+        </section>
 <!-- FIM TRABALHE CONOSCO -->
 
 <div class="divider-2"></div> <!--Linha Divisória */--> 
 
 <!--FOOTER-->
-<footer class="footer" >
+<footer class="footer">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-3 item">
                 <h3>Menu</h3>
                 <ul>
-                    <li><a class="title" href="index.html">Início</a></li>
-                        <li><a class="title" href="historia.html">História</a></li>
-                        <li><a class="title" href="cardapio.html">Cardápio</a></li>
-                        <li><a class="title" href="acasa.html">A Casa</a></li>
-                        <li><a class="title" href="contato.html">Contato</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="acasa.html">A Casa</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
-            </div> 
-
-<!-- ICONES INSTAGRAM/EMAIL/WHATSAPP -->
-            <div class="col item social">
-                <a href="https://www.instagram.com/granodicafe/?hl=en" target="_black"><i class="icon-instagram-line"></i></a>
-                <a href="mailto:granodicafe@gmail.com"><i class="icon-mail-line"></i></a>
             </div>
         </div>
-        <p class="copyright">© 2022 Grano di Café. Todos os direitos reservados. </p>
+        <div class="col item social">
+            <a href="https://www.instagram.com/granodicafe/?hl=en" target="_black"><i class="icon-instagram-line"></i></a>
+            <a href="mailto:gourmetgranocafe@gmail.com"><i class="icon-mail-line"></i></a>
+            <a href="tel:+5511934443836"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        <p class="copyright">
+            <small
+                >© 2022 Grano di Café. Todos os direitos reservados.
+            </small>
+        </p>
     </div>
- </footer>
+</footer>
 
  <a href="#contato" class="back-to-top"><i class="icon-crculo"></i></a>
             </main>
@@ -128,6 +158,8 @@
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
             <!--SWIPE-->
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
