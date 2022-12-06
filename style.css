@@ -319,9 +319,10 @@ nav.show span.icon-close-877{
 }
 
 #home .text{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    text-align: center; 
+    text-align: start;
+    background: rgba(247, 247, 247, 0.884);
+    padding: 2rem 3rem;
+    border-radius: .35rem .35rem;
 }
 
 #home .text h1{
