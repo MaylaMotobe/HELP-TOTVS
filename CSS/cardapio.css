@@ -83,7 +83,7 @@
 
 .esquerda .container::before{
     content: '';
-    height: 130%;
+    height:100%;
     /* background: var(--base-color-second); */
     /* border-right: 3rem solid  var(--base-color-second); */
     position: absolute;
@@ -105,7 +105,7 @@
 }
 
 .mainCardapio  .container .text p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     text-align: center;
 }
