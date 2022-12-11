@@ -1,0 +1,736 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box ;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+} 
+
+.span-home{
+    color: rgb(153, 86, 10);
+}
+
+span{
+    color: rgb(153, 86, 10);
+}
+
+
+/* PALETA DE CORES */
+:root{
+    --header-height: 6.9rem;
+
+     /* colors */
+     --hue: 30;
+     /* HSL color mode */
+     --base-color: hsl(var(--hue) 36% 57%);
+     --base-color-second: #61240cbb;
+     --base-color-alt: #a47464;
+     --title-color: #61240c;
+     --text-color: hsl(0 0% 46%);
+     --text-color-light: hsl(0 0% 98%);
+     --body-color: hsl(0 0% 98%);
+
+
+    /* Paleta de Cores */
+   /* color: #a96e35
+    #d7bc99
+    #61240c
+    #a47464
+    #d3beac */
+
+    /*fonts responsivo */
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
+}
+
+/* CORPO DA PÁGINA */
+/* ----------------------SCROLL - COR---------------------- */
+::-webkit-scrollbar{
+     background:rgba(241, 222, 201, 0.315); 
+     width: .7rem; 
+}
+
+::-webkit-scrollbar-thumb {
+    background:#d7bc99; 
+    border-radius: .7rem;
+  }
+
+/* ----------------------Rolagem animada suave entre os elementos dentro da caixa de rolagem---------------------- */
+html{
+    scroll-behavior: smooth; 
+}
+
+body{
+    font: 400 1.6rem 'DM Sans', sans-serif;
+    color: rgb(31, 29, 29);
+    background: rgba(241, 222, 201, 0.315);
+    -webkit-font-smoothing: antialiased;
+}
+
+.title{
+    font: 700 2.5rem 'Poppins', sans-serif;
+    color:#000;
+    -webkit-font-smoothing: auto;
+}
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    background: var(--base-color);
+    color: var(--text-color-light);
+    height: 3.5rem;
+    padding: 0 1rem;
+    border-radius: 0.55rem 0.85rem;
+    transition: background 0.4s;
+    margin: 3rem 0;
+}
+
+.button:hover{
+    background:rgb(153, 86, 10);
+    color: var(--body-color);
+}
+/*----------------------Linha Divisória 1---------------------- */
+.divider-1 {
+    height: 1px;
+    background: linear-gradient(
+      270deg,
+      hsla(var(--hue), 36%, 57%, 1),
+      hsla(var(--hue), 65%, 88%, 0.34)
+    );
+}
+ /*----------------------Linha Divisória 2---------------------- */
+.divider-2 {
+    height: 1px;
+    background: linear-gradient(
+      270deg,
+      hsla(var(--hue), 65%, 88%, 0.34),
+      hsla(var(--hue), 36%, 57%, 1)
+    );
+}
+
+/* ----------------------Layout da página---------------------- */
+.container{
+    margin-left: 1rem; /* 24px */
+    margin-right: 1rem; 
+}
+
+.grid{
+    display: grid;
+    gap:4rem;
+}
+
+.section{
+    padding: calc(5rem + var(--header-height))  0;
+}
+
+.section .title{
+    margin-bottom: 1rem;
+}
+.section .subtitle{
+    font-size: var(--subtitle-font-size);
+}
+/* ----------------------Menu---------------------- */
+.section header{
+    margin-bottom: 3rem;
+}
+
+.section header strong{
+    color: var(--base-color);
+}
+
+#header{
+   border-bottom: 1px solid #e4e4e4;
+   margin-bottom: 2rem;
+   display: flex;
+   
+/*----------------------Menu fixo---------------------- */
+    width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   background-color: white;
+   box-shadow: 0 0 12px rgba(0, 0, 0, 0.658);
+}
+
+#header.scroll{
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.658);
+} 
+
+
+/* ----------------------Logo na Nav---------------------- */
+.logo {
+    width: 35%;
+    
+}
+
+/*----------------------Navegador---------------------- */
+nav{
+    display: flex;
+    justify-content:space-between; 
+    align-items:center;
+    height: var(--header-height);
+    width: 100%;
+}
+
+/*Color para ocorrer a transição somente na cor */
+nav ul li a{
+    transition: color 0.3s; 
+    position: relative;
+    font-weight: 700px;
+
+}
+
+nav ul li a:hover{
+    color: #9e5f0c;;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%; 
+    height: 2px;
+    background: #b46e13;
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    transition: width 0.2s;  
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+}
+
+nav .menu ul{
+    display: none;
+}
+/* ----------------------Menu no responsivo---------------------- */
+nav .menu {
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+    transition: 0.2s;
+}
+
+nav.show .menu{
+    opacity: 1;
+    visibility: visible;
+
+    background: var(--body-color);
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+}
+
+nav.show .menu ul{
+    display: grid;
+}
+
+nav.show ul.grid {
+    gap:4rem;
+}
+
+/* ----------------------Toggle Menu---------------------- */
+.toggle{
+    color: #9e5f0c;
+    font-family: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+nav span.icon-close-877{
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    top: -1.5rem ;
+    right: 1.5rem;
+
+    transition: .2s;
+    
+}
+
+nav.show span.icon-close-877{
+    visibility: visible;
+    opacity: 1;
+    top: 2rem;
+}
+
+/* ----------------------Bem Vindo---------------------- */
+#home{
+    overflow: hidden;
+    background-image: url(/IMG/fundobemvindo.jpg);  
+    background-repeat: no-repeat;
+    margin: 0 auto;  
+    background-size:cover;
+}
+
+#home .container{
+    margin: 0 ;
+     
+}
+
+#home .image{
+    position:relative;
+     
+}
+
+#home .image::before{
+    content: '';
+    height: 90%;
+    width: 100%;
+    /* background: var(--base-color-second); */
+    border-right: 5rem solid  var(--base-color-second);
+    position: absolute;
+    top: -7.8%;
+    left: 19.7%;
+    z-index: -1; /* ´Fica atrás da imagem */
+}
+
+#home .image img,
+#home .image::before{
+    border-radius: 0.25rem;
+}
+
+#home .image img{
+    position: relative;
+    right: -5.93rem;
+    
+}
+
+#home .text{
+    text-align: start;
+    background: rgba(247, 247, 247, 0.884);
+    padding: 2rem 3rem;
+    border-radius: .35rem .35rem;
+}
+
+#home .text h1{
+    margin-bottom: 1rem;
+}
+
+
+#home .text p{
+    margin-bottom: 2rem;
+
+}
+
+#home .title{
+    color:black;
+}
+
+/* ----------------------Historia---------------------- */
+
+#historia .container{
+    margin: 0;  
+}
+
+#historia .image{
+    position:relative;
+    height: 90% ;
+}
+
+#historia .image::before{
+    content:'';
+    height: 100%;
+    width: 100%;
+    background: #d7bc9956;
+    border-left: 5rem solid  var(--base-color-second);
+    position: absolute;
+    top: -3.3%;
+    left: -25%;
+    z-index: 1; /* ´Fica atrás da imagem */
+}
+
+#historia .image img,
+#historia .image::before{
+    border-radius: 1rem;
+}
+
+#historia .image img{
+    position: relative;
+   
+}
+
+#historia .text{
+    margin-left:1rem;
+    margin-right: 1rem;
+    text-align:justify;
+    text-justify: auto;
+}
+
+#historia .text p{
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#mais{
+    display: none;
+}
+
+/*----------------------Cardapio---------------------- */
+
+.cards.grid{
+    gap: 2rem;  
+}
+
+.cards .container{
+    margin: 0 auto;
+}
+
+.card{
+    padding: 5rem 2rem;
+    box-shadow: 0px 0px 15px  rgba(0,0,0,0.08);
+    border-bottom: 0.25rem solid var(--base-color);
+    border-radius: .25rem .25rem 0 0;
+    text-align: justify;
+    background-color: var(--body-color);
+}
+
+.card i{
+    display: block;
+    margin: 3rem;
+    font-size: 5rem;
+    color: var(--base-color);
+    
+}
+
+.card .title{
+    font-size: 1.5rem;
+    
+}
+
+/*----------------------A Casa---------------------- */
+
+
+
+
+/* ----------------------Swiper---------------------- */
+.swiper-slide {
+    height: auto;
+    padding: 4rem 1rem;
+}
+  
+  .swiper-pagination-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+  
+  .swiper-pagination-bullet-active {
+    background: var(--base-color);
+}
+
+/* ----------------------Contato---------------------- */
+#contato{
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#contato .container {
+  grid-auto-flow: column;
+  align-items: center;
+  
+}
+
+#contato .grid {
+    gap: 4rem;
+  }
+  
+  #contato .text {
+    max-width: 25rem;
+    text-align: justify;
+  }
+
+  #contato .text p {
+    margin-bottom: 2rem;
+  }
+  
+  #contato .button i,
+  #contato ul li i {
+    font-size: 1.5rem;
+    margin-right: 0.625rem;
+  }
+  
+  #contato ul.grid {
+    gap: 2rem;
+  }
+  
+  #contato ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+  #contato ul li i {
+    color: var(--base-color);
+  }
+  
+/*----------------------Botão lateral para subir a página para cima---------------------- */
+.icon-reshot-icon-oceans-E7Q6JK5Z241{
+    font-size: 2rem;
+}
+
+.back-to-top{
+    background:#975c0e;;
+    color: var(--text-color-light);
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+    padding: .5rem;
+    clip-path: circle();
+    line-height: 0;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    transform:translateY(100%);
+}
+
+.back-to-top:hover{
+    color: #9e5f0c;;
+}
+
+
+.back-to-top.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ======================================== RESPONSIVO - MEDIA QUERIES ======================================== */
+/* EXTRA LARGE DEVICES: +1200 > */ 
+@media (min-width: 1200px){
+    .container{
+        max-width: 1120px;
+        margin-left: auto ;
+        margin-right: auto;
+    }
+
+    .section{
+        padding: 10rem 0 ;
+    }
+
+      .section header,
+      #testimonials header {
+        max-width: 32rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .button {
+        height: 3.125rem;
+      }
+
+    /*Menu*/
+    nav .menu{
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    nav .menu ul{
+        display: flex;
+        gap: 2rem;
+    }
+
+    nav .menu ul li a.title{
+        font: 600 1.5rem 'Poppins', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    nav .menu ul li a.title.active {
+        font-weight: bold;
+        -webkit-font-smoothing: auto;
+      }
+
+    nav  .icon-open-menu-6208{
+        display: none;
+    }
+    /*Bem Vindo*/
+    #home .container{
+        grid-auto-flow: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    
+    #home .image{
+        order: 1;
+    }
+
+    #home .text{
+        order: 0;
+        max-width: 24rem;
+        text-align: left;
+    }
+    main{
+        /*Para desgrudar o conteudo do menu */
+        margin-top: var(--header-height);
+    }
+
+/* historia */
+  #historia .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+ 
+/* cardapio */
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
+  }
+
+/* contato */
+  #contato .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contato .text {
+    max-width: 25rem;
+  }
+
+}
+
+
+  
+/* Large devices: +992 >  */
+@media (min-width: 992px){
+    :root{
+        --title-font-size: 2.25rem;
+        --subtitle-font-size: 1.125rem;
+    }
+    #historia .image img{
+        width: 80%;
+        left: 12%;
+    }
+
+    #historia .image::before{
+        height: 80%;
+        top: -7%;
+        left: -4%;
+        z-index: 0;
+    }
+}
+
+
+
+@media(max-width: 1169px){ 
+    #historia .container{
+        margin: 0 auto;
+    }
+    #historia .image img{
+        width: 45%;
+        margin-left: 9rem;
+    }
+    
+    #historia .image::before{
+        height: 100%;
+        top: -.99%;
+        left: 21%;
+    }
+
+    #cardapio .container{
+        margin: 0 auto;
+    }
+
+    #acasa .container{
+        margin: 0 auto;
+    }
+
+    #acasa .title{
+        text-align: center;
+    }
+
+    #contato .container{
+        margin:  0 auto;
+    }
+
+    
+}
+
+@media(max-width: 1110px){ 
+    #home .container{
+        margin: 0 auto;
+    }
+    #historia .container{
+        margin: 0 auto;
+    }
+
+    #historia .text{
+        margin: 2rem 0;
+    }
+
+    #historia .image::before{
+        height: 100%;
+        width: 80%;
+        left: 22%;
+        top: 5%;
+        z-index: 0;
+    }
+
+    #historia .image img{
+       width: 55%;
+       margin-bottom: 4rem;
+       right: -5%;
+       top: 10%;
+    }
+
+    #cardapio .container{
+        margin: 0 auto;
+    }
+
+    .cards{
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #acasa .container{
+        margin: 0 auto;
+    }
+    .acasa{
+        flex-grow: 1;
+        word-wrap: break-word;
+    }
+
+
+    #contato{
+        padding: 5rem 2rem;
+        background-size: cover; /*especifica que a imagem de fundo deve ser dimensionado de modo que seja tão pequena quanto possível*/
+    }
+
+    #contato .container{
+        margin:  0 auto;
+    }
+}

@@ -1,13 +1,16 @@
 #acasa{
+    text-align: center;
     overflow: hidden;
-    background: rgba(241, 222, 201, 0.315); 
+    background-image: url(/IMG/ambiente1.jpg);
+    background-size: cover;
 }
 
-#acasa .text{
-    text-align: start;
-    background: rgba(247, 247, 247, 0.61);
+#acasa .container .text{ 
+    text-align: center;
+    background: rgba(247, 247, 247, 0.788);
     padding: 2rem 3rem;
     border-radius: .35rem .35rem;
+    margin: auto 0 ; 
 }
 
 #acasa .text h1{
@@ -19,10 +22,16 @@
     margin-bottom: 2rem;
 }
 
+.localizacao{
+    padding: 2rem 3rem;
+    position: relative;
+    width: 90%;
+    
+}
 
 
 /* Menu Responsivo */
-@media (min-width: 1200px){ 
+/* @media (min-width: 1200px){ 
     #acasa .container{
         grid-auto-flow: column;
         justify-content: space-between;
@@ -55,7 +64,7 @@
 }
 
 @media(max-width: 999px){ /*OK*/
-    main, .footer{
+    /* main, .footer{
         font-size: 1.2rem;
     }
 
@@ -68,4 +77,4 @@
         margin: 0 auto;
         width: 100%;
     }
-}
+} */ 

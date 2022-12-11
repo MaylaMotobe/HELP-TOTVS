@@ -1,12 +1,11 @@
-/*cardapio  */
 #cardapio{
     text-align: center;
     overflow: hidden;
-    background-image: url(/IMG/tortamorango.png);
+    background-image: url(/IMG/tortamorango2.jpg);
     background-size: cover;
 }
 
-#cardapio .container .text{ 
+#cardapio .container .text { 
     text-align: center;
     background: rgba(247, 247, 247, 0.61);
     padding: 2rem 3rem;
@@ -14,8 +13,13 @@
     margin: 0 auto ; 
 }
 
+#cardapio p {
+    font-size: 2rem;
+}
 
-/*Direção das imagens dos pratos*/
+
+
+/*Direção das imagens dos pratos - Direita */
 
 .direita .container{
     margin: 0 ;
@@ -29,45 +33,27 @@
 
 .direita .image img{
     border-radius: 0.25rem;
+    border: 1.5rem solid var(--base-color-second);
+    
 }
 
 .direita .container::before{
     content: '';
-    height: 200%;
-    /* background: var(--base-color-second); */
-    border-right: 3rem solid  var(--base-color-second);
+    height: 120%;
+    /* width: 120%;
+    background: #d7bc9956; */
+    /* border-right: 3rem solid  var(--base-color-second); */
     position: absolute;
-    top: -50%;
-    right: -10%;
-    z-index: -1; /* ´Fica atrás da imagem */
+    top: -10%;
+    right: -2%;
+    z-index: 0; /*Fica atrás da imagem */
 }
 
-
-
-.mainCardapio .container .direita .text,
-.mainCardapio .container .esquerda .text{
-    margin: 0 auto;  
-    text-align:end;
-}
-
- .mainTurtle .text .title{
-    text-align: center;   
-    margin: 2rem 0;
-}
-
-.mainTurtle  .container .text p{
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-
-
-/*ESQUERDA*/
+/*Esquerda*/
 
  .esquerda .container{
     margin: 0 auto 5rem auto;  
-    position: relative;
+    position: relative; 
 } 
 
 .esquerda .container .image{
@@ -76,11 +62,12 @@
 
 
 .esquerda .image img{
-    position: relative;
+    position: relative; 
     max-width: 100%;
-    height: 33.2rem;
-    top: -37%;
+    height: 20rem;
+    top: 10%;
     border-radius: 0.25rem;
+    border: 1.5rem solid var(--base-color-second);
 }
 
 
@@ -96,18 +83,36 @@
 
 .esquerda .container::before{
     content: '';
-    height: 200%;
+    height: 130%;
     /* background: var(--base-color-second); */
-    border-right: 3rem solid  var(--base-color-second);
+    /* border-right: 3rem solid  var(--base-color-second); */
     position: absolute;
-    top: -50%;
-    left: -10%;
-    z-index: -1; /* ´Fica atrás da imagem */
+    top: -5%;
+    left: -2%;
+    z-index: 0; /* ´Fica atrás da imagem */
 }
 
-.esquerda .oliva img{
-    height: 40.5rem;
+
+.mainCardapio .container .direita .text,
+.mainCardapio .container .esquerda .text{
+    margin: 0 auto;  
+    text-align:end;
 }
+
+ .mainCardapio .text .title{
+    text-align: center;   
+    margin: 2rem 0;
+}
+
+.mainCardapio  .container .text p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+
 
 
 /* EXTRA LARGE DEVICES: +1200 > */

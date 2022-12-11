@@ -2,44 +2,30 @@
 <html lang="pt-br">
     <head>
         <!-- Informações da Página -->
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <link rel="shortcut icon" href="IMG/logo1.png" type="image/x-icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--BOOTSTRAP-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <!--menu-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- CSS only - Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!--Menu-->
         <link rel="stylesheet" href="./Assets/fonts/style.css">   
         <link rel="stylesheet" href="./Assetss/fonts/style.css">
         <link rel="stylesheet" href="https://i.icomoon.io/public/temp/9548c1dc8d/UntitledProject/style.css">
-        <!-- Swiper -->
+        <!--Swiper-->
         <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        <!--style-->
-        <link rel="stylesheet" href="style.css" />
+        <!--Estilos-->
+        <link rel="stylesheet" href="/CSS/style.css" />
         <link rel="stylesheet" href="/CSS/footer.css">
-        <!-- fontes -->
+        <!--Fontes-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
         <title>Grano di Café</title>
     </head>
+
     <body>
-
-        <div vw class="enabled">
-            <div vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-                <div  class="vw-plugin-top-wrapper"></div>
-            </div>
-        </div>
-
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-            <script>
-                new window.Vlivras.Widget('https://vlibras.gov.br/app');
-            </script>
-
-        <!--Navegador-->
+    <!--Navegador-->
         <header id="header" class="scroll">
             <nav class="container">
                 <a href="index.html"><img class="logo" src="./IMG/logo2.png" alt="Logo" /></a>
@@ -56,106 +42,87 @@
                 <span class="toggle icon-open-menu-6208"></span>
             </nav>
         </header>
-        <!--fim do Navegador-->
+    <!--fim do Navegador-->
 
-        <!--Home/Index-->
-        <main>
-            <section class="section" id="home">
-                <div class="container grid">
-                    <div class="text">
-                        <h2 class="title">
-                            Bem-vindo ao
-                            <span class="span-home">Grano di Café</span>
-                        </h2>
-
-                        <p>
-                            Somos um restaurante feito para você e
-                            sua família.
-                        </p>
-                    </div>
+    <!--Home/Index-->
+    <main>
+        <section class="section" id="home">
+            <div class="container grid">
+                <div class="text">
+                    <h2 class="title">Bem vindo ao <span class="span-home">Grano di Café</span></h2>
+                    <p> Somos um restaurante feito para você e sua família.</p>
                 </div>
-            </section>
-            <div class="divider-2"></div>
-            <!--Linha Divisória*/-->
-            <!--fim da Home-->
-
-            <!--QUEM SOMOS-->
-            <section class="section" id="historia">
-                <div class="container grid">
-                    <div class="image">
-                        <img src="IMG/equipe.png" alt="Equipe" />
-                    </div>
+            </div>
+        </section>
+    <!--fim da Home-->
+<div class="divider-2"></div><!--Linha Divisória*/-->
+        
+    <!--Quem Somos-->
+        <section class="section" id="historia">
+            <div class="container grid">
+                <div class="image">
+                    <img src="IMG/equipe.png" alt="Equipe" />
+                </div>
                 
+            <div class="text">
+                <h2 class="title">Quem <span>Somos</span></h2>
+                <p> Tivemos colaboradores focados e aplicados, que contribuíram para o nosso desenvolvimento, cada um da sua maneira, mas com contribuições incalculáveis. Realizamos eventos que nos fortaleceram e diminuíram distâncias de convivência e de relações.</p><br/>
+                <a class="button" href="historia.html">Saiba mais </a>
+            </div>
+            </div>
+        </section>
+    <!--fim do Quem somos-->
+<div class="divider-2"></div><!--Linha Divisória */-->
+            
+    <!-- Cardápio -->
+        <section class="section" id="cardapio">
+            <div class="container grid">
+                <header>
+                    <h2 class="title">Nosso <span>Cardápio</span></h2>
+                    <p>Conheça nossas opções de pratos para o seu almoço e também nossas deliciosas sobremesas!</p>
                     <div class="text">
-                        <h2 class="title">Quem <span>Somos</span></h2>
-                        <p>
-                            Tivemos colaboradores focados e aplicados, que contribuíram para o nosso desenvolvimento, cada um da sua maneira, mas com contribuições incalculáveis. Realizamos eventos que nos fortaleceram e diminuíram distâncias de convivência e de relações.<br />
-                            <a class="button" href="historia.html">Saiba mais </a>
-                        </p>
+                        <a class="button" href="cardapio.html">Cardápio </a>
                     </div>
+                </header>
+
+            <div class="cards grid">
+                <div class="card">
+                    <img src="IMG/tortachoco.png" alt="Torta de Chocolate">
+                </div>
+                <div class="card">
+                    <img src="IMG/tortamorango2.jpg" alt="Torta de Morango">
+                </div>
+                <div class="card">
+                    <img src="IMG/pudim.png" alt="Pudim">
+                </div>
+                </div>
                 </div>
             </section>
-            <!--fim do SOBRE NÓS-->
-            <div class="divider-2"></div>
-            <!--Linha Divisória */-->
+    <!-- fim Cardápio -->
+<div class="divider-2"></div><!--Linha Divisória */-->
+            
+    <!-- A Casa -->
+        <section class="section" id="acasa">
+            <div class="container">
+                <header>
+                    <h2 class="title">Conheça nossa <span>Casa</span></h2>
+                    <p>Estamos localizados na Av. Salgado Filho, 252 - Guarulhos</p>
+                    <a href="acasa.html" class="button" target="_blank">Saiba mais</a>
 
-            <!-- CARDÁPIO -->
-            <section class="section" id="cardapio">
-                <div class="container grid">
-                    <header>
-                        <h2 class="title">Nosso <span>Cardápio</span></h2>
-                        <p>Conheça nossas opções de pratos para o seu almoço e também nossas deliciosas sobremesas! </p>
-                        <div class="text">
-                            <a class="button" href="cardapio.html">Cardápio </a>
-                        </div>
-                    </header>
-                    <div class="cards grid">
-                        <div class="card">
-                            <img src="IMG/tortachoco.png" alt="">
-                            
-                                
-                        </div>
-                        <div class="card">
-                            <img src="IMG/tortamorango.png" alt="">
-                                
-                        </div>
-                        <div class="card">
-                            <img src="IMG/pudim.png" alt="">
-                              
-                        </div>
-                    </div>
+                <div class="card">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.937942652484!2d-46.53099398598326!3d-23.46270286933703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5449d66cbeb%3A0x5fd15735782229d8!2sAv.%20Salgado%20Filho%2C%20252%20-%20Centro%2C%20Guarulhos%20-%20SP%2C%2007115-000!5e0!3m2!1sen!2sbr!4v1670725553615!5m2!1sen!2sbr" width="400" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
                 </div>
-                </div>
-
-            </section>
-            <div class="divider-2"></div>
-            <!--Linha Divisória */-->
-
-            <!-- A CASA -->
-            <section class="section" id="acasa">
-                <div class="container">
-                    <header>
-                        <h2 class="title">Conheça nossa <span>Casa</span></h2>
-                        <a href="acasa.html" class="button" target="_blank"
-                            >Saiba mais</a>
-                            <iframe id="mapa"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.929483702161!2d-46.53266768440857!3d-23.46300796385404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5446cfeeebd%3A0xfa9c0c1ae8acdbd6!2sGrano%20di%20Caf%C3%A9!5e0!3m2!1sen!2sbr!4v1669315074583!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <h5>Horario de Funcionamento: Segunda a Sexta das 8:00h ás 18:00h</h5>
-                    </header>
-                    </div> 
-                </div>
-
-            </section>
-            <!-- FIM CASA -->
-            <div class="divider-1"></div>
+                </header>
+            </div> 
+        </section>
+    <!-- fim A Casa -->
+<div class="divider-1"></div><!--Linha Divisória */-->
     
-            <!-- CONTATO -->
-            <section class="section" id="contato">
-                <div class="container grid">
-                    <div class="text">
-                        <h2 class="title">
-                            Entre em <span class="span-home">Contato</span>
-                        </h2>
-
+    <!-- Contato -->
+        <section class="section" id="contato">
+            <div class="container grid">
+                <div class="text">
+                        <h2 class="title">Entre em <span class="span-home">Contato</span></h2>
                         <p>
                             Quer fazer um comentário, elogio, crítica ou
                             sugestão? Ou quer oferecer seus talentos para quem
@@ -164,15 +131,15 @@
                         </p>
 
                         <a class="button" href="contato.html">Saiba mais </a>
-                    </div>
                 </div>
-            </section>
-            <!-- FIM CONTATO -->
-            <div class="divider-2"></div>
-            <!--linha em gradiente */-->
-        </main>
+            </div>
+        </section>
+    <!-- fim Contato -->
+<div class="divider-2"></div><!--Linha Divisória */-->
+    </main>
 
-        <footer class="footer">
+    <!-- Rodapé -->
+        <footer class="footer" >
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-3 item">
@@ -180,16 +147,28 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="historia.html">História</a></li>
-                            <li><a href="cardapio.html">Cardápio</a></li>
-                            <li><a href="acasa.html">A Casa</a></li>
-                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="cardapio.html">Cardápio</a></li> 
+                            <li><a href="acasa.html">A Casa</a></li>      
+                        </ul>
+                    </div> 
+                    <div class="col-12 col-md-3 item">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li><a href="contato.html">Sugestões</a></li>
+                            <li><a href="tel:+551193444383">(11) 93444-3836</a></li> 
                         </ul>
                     </div>
-                </div>
+                    <div class="col-md-6 item text">
+                        <h3>Local</h3>
+                        <ul>
+                            <li>Av. Salgado Filho, 252 - Guarulhos.</li>
+                            <li>De Segunda a Sexta das 08:00h ás 18:00h.</li>
+                        </ul>
+                    </div>
                 <div class="col item social">
+                    <a href="tel:+5511934443836"><i class="bi bi-whatsapp"></i></a>
                     <a href="https://www.instagram.com/granodicafe/?hl=en" target="_black"><i class="icon-instagram-line"></i></a>
                     <a href="mailto:gourmetgranocafe@gmail.com"><i class="icon-mail-line"></i></a>
-                    <a href="tel:+5511934443836"><i class="bi bi-whatsapp"></i></a>
                 </div>
                 <p class="copyright">
                     <small
@@ -199,23 +178,20 @@
             </div>
         </footer>
 
-        <a href="#home" class="back-to-top"><i class="icon-crculo"></i></a>
+    <!-- botão para subir a página -->
+    <a href="#home" class="back-to-top"><i class="icon-crculo"></i></a>
 
-      <!--Script-->
-            <!--BOOTSTRAP-->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-            <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!--Script-->
+        <!-- JavaScript para os itens ter animação ao aparecer -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
-            <!--SWIPE-->
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!--SWIPE-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-            <!--SCROLL-->
-            <script src="https://unpkg.com/scrollreveal"></script>
+        <!--SCROLL-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-            <!--JavaScrip-->
-            <script src="/JS/javascript.js"></script>
+        <!--JavaScrip-->
+        <script src="/JS/javascript.js"></script>
     </body>
 </html>

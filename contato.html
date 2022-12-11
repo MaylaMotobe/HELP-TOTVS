@@ -17,7 +17,7 @@
         <!-- Swiper -->
         <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <!--style-->
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="/CSS/style.css" />
         <link rel="stylesheet" href="/CSS/contato.css">
         <link rel="stylesheet" href="/CSS/footer.css">
         <!-- fontes -->
@@ -49,23 +49,24 @@
  <div class="divider-2"></div> <!--Linha Divisória */--> 
            
  
-<!-- FORMULÁRIO -->
+<!-- Contato-->
 <section class="section" id="inscricao">
     <div class="container grid">
         <div class="text">
-            <h2 class="title">Entre em <span class="span-home">Contato</span> </h2>
+            <h2 class="title">Entre em <span class="span-home">Contato</span> </h2></br>
             <p>Quer fazer um comentário, elogio, crítica ou sugestão? Então escreva para nós e em breve lhe daremos retorno.</p>
             <!-- Botão para acionar modal(o formulário) -->
             <button type="button" class="btn button" data-toggle="modal" data-target="#ExemploModalCentralizado">
                 Quero escrever! 
             </button>
+        </div></div>
 
-        <!-- Modal -->
+        <!-- Formulário -->
             <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h5 class="modal-title" id="TituloModalCentralizado">Inscrição</h5>
+                    <h5 class="modal-title" id="TituloModalCentralizado">Sugestões</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -123,33 +124,48 @@
 
 <div class="divider-2"></div> <!--Linha Divisória */--> 
 
-<!--FOOTER-->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-3 item">
-                <h3>Menu</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="historia.html">História</a></li>
-                    <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="acasa.html">A Casa</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
+        <!-- Rodapé -->
+        <footer class="footer" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 item">
+                        <h3>Menu</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="cardapio.html">Cardápio</a></li> 
+                            <li><a href="acasa.html">A Casa</a></li>  
+                             
+                        </ul>
+                    </div> 
+                    <div class="col-12 col-md-3 item">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li><a href="contato.html">Sugestões</a></li>
+                            <li><a href="tel:+551193444383">(11) 93444-3836</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Local</h3>
+                        <ul>
+                            <li>Av. Salgado Filho, 252 - Guarulhos.</li>
+                            <li>De Segunda a Sexta das 08:00h ás 18:00h.</li>
+                        </ul>
+                    </div>
+                <div class="col item social">
+                    <a href="tel:+5511934443836"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/granodicafe/?hl=en" target="_black"><i class="icon-instagram-line"></i></a>
+                    <a href="mailto:gourmetgranocafe@gmail.com"><i class="icon-mail-line"></i></a>
+                   
+                </div>
+                <p class="copyright">
+                    <small
+                        >© 2022 Grano di Café. Todos os direitos reservados.
+                    </small>
+                </p>
             </div>
-        </div>
-        <div class="col item social">
-            <a href="https://www.instagram.com/granodicafe/?hl=en" target="_black"><i class="icon-instagram-line"></i></a>
-            <a href="mailto:gourmetgranocafe@gmail.com"><i class="icon-mail-line"></i></a>
-            <a href="tel:+5511934443836"><i class="bi bi-whatsapp"></i></a>
-        </div>
-        <p class="copyright">
-            <small
-                >© 2022 Grano di Café. Todos os direitos reservados.
-            </small>
-        </p>
-    </div>
-</footer>
+        </footer>
 
  <a href="#inscricao" class="back-to-top"><i class="icon-crculo"></i></a>
             </main>
@@ -168,5 +184,6 @@
             <script src="https://unpkg.com/scrollreveal"></script>
             <!-- JS -->
 <script src="/JS/javascript.js"></script>
+<script src="/JS/formulario.js"></script>
             </body>
             </html>

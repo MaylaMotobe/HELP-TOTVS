@@ -1,21 +1,24 @@
-#ocontato{
+#inscricao{
+    text-align: center;
     overflow: hidden;
-    background: rgba(241, 222, 201, 0.315); 
+    background-image: url(/IMG/ambiente2.jpg);
+    background-size: cover;
 }
 
-#ocontato .text{
-    text-align: start;
+#inscricao .container .text{
+    text-align: center;
     background: rgba(247, 247, 247, 0.61);
     padding: 2rem 3rem;
     border-radius: .35rem .35rem;
+    margin: 0 auto ; 
 }
 
-#ocontato .text h1{
+#inscricao .text h1{
     margin-bottom: 1rem;
 }
 
 
-#ocontato .text p{
+#inscricao .text p{
     margin-bottom: 2rem;
 }
 
@@ -25,7 +28,7 @@
 }
 
 #trabalheconosco .text{
-    text-align: start;
+    text-align: center;
     background: rgba(247, 247, 247, 0.61);
     padding: 2rem 3rem;
     border-radius: .35rem .35rem;

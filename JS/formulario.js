@@ -9,9 +9,9 @@ function validarFormulario() {
         document.getElementById("email").value != "" && 
         document.getElementById("validationTextarea").value != ""
     ) {
-        const nome = document.getElementById("nome")
-        const email = document.getElementById("email")
-        const text = document.getElementById("validationTextara")
+        // const nome = document.getElementById("nome")
+        // const email = document.getElementById("email")
+        // const text = document.getElementById("validationTextara")
         alert("Obrigado! Você receberá um e-mail de retorno.")
         
         return;

@@ -1,5 +1,5 @@
 #historia{
-    text-align: center;
+    text-align: justify;
 }
 
 
@@ -14,18 +14,18 @@
 
 #sobre .image{
     position: relative;
-    height: 75%;
+    height: 107%;
     
    
 }
 
 #sobre .image::before{
-    content: '';
+    content:'';
     height: 50%;
     width: 100%;
-    /* background: var(--base-color-second); */
+    background: #d7bc9956;
     border-right: 5rem solid  var(--base-color-second);
-    position: absolute;
+    position:absolute;
     bottom: 37.8%;
     left: -33%;
     z-index: 0; /* ´Fica atrás da imagem */
@@ -45,26 +45,29 @@
 
 
 #sobre .text{
-    text-align: start;   
+    text-align: justify;   
     padding: 0 2rem;
 }
 
 #sobre .text h1{
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 #sobre .text p{
     margin-bottom: 2rem;
+    text-align: justify;
 }
 
-span{
-    color: var(--base-color);
+#mais {
+    display: none;
 }
 
 
 /* ====== Missao/Visão/Valores ================================ */
 #mvv .cards .card + .card{
     margin-top:5rem ;
+    text-align: justify;
 }
 
 /* ======= RESPONSIVO - MEDIA QUERIES ================================= */

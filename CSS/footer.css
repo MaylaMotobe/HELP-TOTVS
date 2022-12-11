@@ -3,7 +3,7 @@
     background: rgba(241, 222, 201, 0.315);
     margin: 0 auto;
     padding: 5rem 0;
-    color: var(--text-color-light);
+    color: black;
   }
   
   .footer h3 {
@@ -23,6 +23,7 @@
     line-height:1.6;
     margin-bottom:0;
     font-size: 1.5rem;
+    
   }
   
   
@@ -49,7 +50,8 @@
     padding-top:2.4rem;
     font-size:2rem;
     margin-bottom:0;
-    color: #9e5f0c;;
+    color: #9e5f0c;
+    font-size: 70%;
   }
   
   

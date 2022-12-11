@@ -68,12 +68,12 @@ scrollReveal.reveal(
 )
 
 //SOBRE
-scrollReveal.reveal(
-  `#sobre .image, #sobre .text,
-  #services-sobre .card
-  `,
-  { interval: 100 }
-)
+// scrollReveal.reveal(
+//   `#sobre .image, #sobre .text,
+//   #services-sobre .card
+//   `,
+//   { interval: 100 }
+// )
 
 //CARDAPIO
 scrollReveal.reveal(
@@ -147,9 +147,3 @@ window.addEventListener('scroll', function () {
   backToTop()
   activateMenuAtCurrentSection()
 })
-
-
-
-///
-
-
