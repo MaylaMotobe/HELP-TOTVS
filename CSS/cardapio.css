@@ -1,7 +1,7 @@
 #cardapio{
     text-align: center;
     overflow: hidden;
-    background-image: url(/IMG/tortamorango2.jpg);
+    background-image: url(../IMG/tortamorango2.jpg);
     background-size: cover;
 }
 

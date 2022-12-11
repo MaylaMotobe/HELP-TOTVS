@@ -1,7 +1,7 @@
 #inscricao{
     text-align: center;
     overflow: hidden;
-    background-image: url(/IMG/ambiente2.jpg);
+    background-image: url(../IMG/ambiente2.jpg);
     background-size: cover;
 }
 

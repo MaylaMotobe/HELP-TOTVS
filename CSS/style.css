@@ -281,7 +281,7 @@ nav.show span.icon-close-877{
 /* ----------------------Bem Vindo---------------------- */
 #home{
     overflow: hidden;
-    background-image: url(/IMG/fundobemvindo.jpg);  
+    background-image: url(../IMG/fundobemvindo.jpg);  
     background-repeat: no-repeat;
     margin: 0 auto;  
     background-size:cover;
