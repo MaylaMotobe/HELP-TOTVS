@@ -19,6 +19,7 @@ a:hover{
 img{
     width: 100%;
     height: auto;
+    border-radius: 0.5rem;
 } 
 
 .span-home{
@@ -106,7 +107,7 @@ body{
 }
 /*----------------------Linha Divisória 1---------------------- */
 .divider-1 {
-    height: 1px;
+    height: 3px;
     background: linear-gradient(
       270deg,
       hsla(var(--hue), 36%, 57%, 1),
@@ -115,7 +116,16 @@ body{
 }
  /*----------------------Linha Divisória 2---------------------- */
 .divider-2 {
-    height: 1px;
+    height: 3px;
+    background: linear-gradient(
+      270deg,
+      hsla(var(--hue), 65%, 88%, 0.34),
+      hsla(var(--hue), 36%, 57%, 1)
+    );
+}
+
+.divider-3 {
+    height: 80px;
     background: linear-gradient(
       270deg,
       hsla(var(--hue), 65%, 88%, 0.34),
@@ -135,7 +145,9 @@ body{
 }
 
 .section{
-    padding: calc(5rem + var(--header-height))  0;
+    /* padding: calc(5rem + var(--header-height))  0; */
+    padding: 6rem;
+
 }
 
 .section .title{
@@ -152,6 +164,7 @@ body{
 .section header strong{
     color: var(--base-color);
 }
+
 
 #header{
    border-bottom: 1px solid #e4e4e4;
@@ -393,16 +406,25 @@ nav.show span.icon-close-877{
 
 /*----------------------Cardapio---------------------- */
 
+.cards.grid.cardapio{
+    gap: 1rem;  
+    
+    
+}
+
 .cards.grid{
-    gap: 2rem;  
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .cards .container{
     margin: 0 auto;
+    border-radius: 0.5rem;
 }
 
 .card{
-    padding: 5rem 2rem;
+    padding: 3rem 4rem;
     box-shadow: 0px 0px 15px  rgba(0,0,0,0.08);
     border-bottom: 0.25rem solid var(--base-color);
     border-radius: .25rem .25rem 0 0;
@@ -487,6 +509,11 @@ nav.show span.icon-close-877{
   #contato ul li i {
     color: var(--base-color);
   }
+
+  #contato .image{
+    display: flex;
+    width: 80%;
+}
   
 /*----------------------Botão lateral para subir a página para cima---------------------- */
 .icon-reshot-icon-oceans-E7Q6JK5Z241{
@@ -623,6 +650,7 @@ nav.show span.icon-close-877{
     max-width: 25rem;
   }
 
+
 }
 
 
@@ -644,6 +672,7 @@ nav.show span.icon-close-877{
         left: -4%;
         z-index: 0;
     }
+    
 }
 
 
@@ -678,6 +707,9 @@ nav.show span.icon-close-877{
     #contato .container{
         margin:  0 auto;
     }
+    #contato .image img{
+        width: 100%;
+    }
 
     
 }
@@ -696,14 +728,14 @@ nav.show span.icon-close-877{
 
     #historia .image::before{
         height: 100%;
-        width: 80%;
+        width: 106%;
         left: 22%;
         top: 5%;
         z-index: 0;
     }
 
     #historia .image img{
-       width: 55%;
+       width:68%;
        margin-bottom: 4rem;
        right: -5%;
        top: 10%;
@@ -733,5 +765,10 @@ nav.show span.icon-close-877{
 
     #contato .container{
         margin:  0 auto;
+    }
+
+    #contato .image img{
+        width: 160%;
+
     }
 }

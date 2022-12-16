@@ -3,6 +3,7 @@
     overflow: hidden;
     background-image: url(../IMG/ambiente1.jpg);
     background-size: cover;
+    margin-bottom: 10px;
 }
 
 #acasa .container .text{ 
@@ -29,9 +30,15 @@
     
 }
 
+.boxevento{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 
 /* Menu Responsivo */
-/* @media (min-width: 1200px){ 
+ @media (min-width: 1200px){ 
     #acasa .container{
         grid-auto-flow: column;
         justify-content: space-between;
@@ -64,7 +71,7 @@
 }
 
 @media(max-width: 999px){ /*OK*/
-    /* main, .footer{
+    main, .footer{
         font-size: 1.2rem;
     }
 
@@ -77,4 +84,4 @@
         margin: 0 auto;
         width: 100%;
     }
-} */ 
+} 

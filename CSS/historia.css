@@ -14,21 +14,20 @@
 
 #sobre .image{
     position: relative;
-    height: 107%;
+    height: 60%;
     
    
 }
 
 #sobre .image::before{
     content:'';
-    height: 50%;
+    height: 80%;
     width: 100%;
-    background: #d7bc9956;
-    border-right: 5rem solid  var(--base-color-second);
-    position:absolute;
-    bottom: 37.8%;
-    left: -33%;
-    z-index: 0; /* ´Fica atrás da imagem */
+    /* background: #d7bc9956;
+    border-right: 5rem solid  var(--base-color-second); */
+    /* position:absolute; */
+    bottom: 100%; 
+    left: 60%; 
 }
 
 #sobre .image img,
@@ -49,12 +48,33 @@
     padding: 0 2rem;
 }
 
-#sobre .text h1{
-    margin-bottom: 1rem;
-    text-align: justify;
+.missao{
+    font: 700 2rem 'Poppins', sans-serif;
+    color:#000;
+    -webkit-font-smoothing: auto;
+    text-align: center;
 }
 
-#sobre .text p{
+.visao{
+    font: 700 2rem 'Poppins', sans-serif;
+    color:#000;
+    -webkit-font-smoothing: auto;
+    text-align: center;
+}
+
+.valores{
+    font: 700 2rem 'Poppins', sans-serif;
+    color:#000;
+    -webkit-font-smoothing: auto;
+    text-align: center;
+}
+
+#mvv .title h3{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#mvv .title p{
     margin-bottom: 2rem;
     text-align: justify;
 }
@@ -65,8 +85,8 @@
 
 
 /* ====== Missao/Visão/Valores ================================ */
-#mvv .cards .card + .card{
-    margin-top:5rem ;
+#mvv .cards .card{
+    margin-top:2rem ;
     text-align: justify;
 }
 
@@ -88,22 +108,18 @@
         left: 5%;
     }
     
-    #sobre .image img,
-    #sobre .image::before{
-        border-radius: 0.25rem;
-    }
     
     #sobre .image img{
         position: relative;
-        top: 19%;
+        top: 11%;
         right: -2.93rem;
-        width: 80%;
+        width: 100%;
     }
    
     #sobre .text{  
         order: 0;
         max-width: 90rem;
-        text-align: left;
+        text-align:justify;
     }
 
     #mvv{
@@ -134,7 +150,7 @@
     #sobre .text{  
         order: 0;
         max-width: 90rem;
-        text-align: left;
+        text-align: justify;
         margin: 0 auto;
     }
 
@@ -185,7 +201,7 @@
     #sobre .text{  
         order: 0;
         max-width: 90rem;
-        text-align: left;
+        text-align: justify;
         margin: 2rem 2rem;
     }
 
